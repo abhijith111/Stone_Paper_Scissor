@@ -8,6 +8,7 @@ function playWith(btnId) {
     } else if (btnId === "btn__scissor") {
         document.getElementById("player__input").innerHTML = "Scissor";
     }
+    //edit for new branch commit
     $.ajax({
         url:
             "https://www.random.org/integers/?num=10&min=1&max=6&col=1&base=10&format=plain&rnd=new",
