@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Stone Paper Scissor</title>
+    </head>
+    <body>
+        <header>
+            <h2 class="text-center mt-3">Gaming</h2>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row p-5">
+                    <div class="card p-5 players__div">
+                        <span id="player__Idspan" class="text-center"
+                            >player
+                        </span>
+
+                        <span id="player__input" class="text-center"></span>
+
+                        <span id="player__score" class="text-center">0</span>
+                    </div>
+                    <div class="card ml-auto p-5 players__div">
+                        <span id="pc__Idspan" class="text-center">PC</span>
+                        <span id="pc__input" class="text-center"></span>
+
+                        <span id="pc__score" class="text-center">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h4
+                        class="ml-auto mr-auto"
+                        style="text-decoration: underline"
+                    >
+                        Choose Option
+                    </h4>
+                </div>
+                <div class="row mt-4">
+                    <button
+                        id="btn__stone"
+                        class="btn btn-primary ml-auto btnPlayInput"
+                        onclick="playWith(this.id)"
+                    >
+                        Stone
+                    </button>
+                    <span style="width: 6rem"></span>
+                    <button
+                        id="btn__paper"
+                        class="btn btn-primary mr-auto btnPlayInput"
+                        onclick="playWith(this.id)"
+                    >
+                        Paper
+                    </button>
+                </div>
+                <div class="row mt-3">
+                    <button
+                        id="btn__scissor"
+                        class="btn btn-primary ml-auto mr-auto btnPlayInput"
+                        onclick="playWith(this.id)"
+                    >
+                        Scissor
+                    </button>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="index.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"
+    ></script>
+</html>
+<!-- https://www.random.org/integers/?num=10&min=1&max=6&col=1&base=10&format=plain&rnd=new -->
